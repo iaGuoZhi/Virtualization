@@ -7,3 +7,9 @@
 [submodule "host-guest-shm/guest"]
 	path = host-guest-shm/guest
 	url = https://github.com/iaGuoZhi/linux
+[submodule "in_order/qemu"]
+	path = in_order/qemu
+	url = https://github.com/iaGuoZhi/qemu
+[submodule "in_order/guest"]
+	path = in_order/guest
+	url = https://github.com/iaGuoZhi/linux
