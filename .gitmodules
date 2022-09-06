@@ -4,3 +4,6 @@
 [submodule "host-guest-shm/host"]
 	path = host-guest-shm/host
 	url = https://github.com/iaGuoZhi/linux
+[submodule "host-guest-shm/guest"]
+	path = host-guest-shm/guest
+	url = https://github.com/iaGuoZhi/linux
