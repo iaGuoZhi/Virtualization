@@ -1,0 +1,3 @@
+[submodule "host-guest-shm/qemu"]
+	path = host-guest-shm/qemu
+	url = https://github.com/iaGuoZhi/qemu
