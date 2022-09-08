@@ -36,3 +36,7 @@ I sent three patches series to Linux and QEMU community in total, and they are u
 
 * [virtio-net](https://patchwork.kernel.org/project/qemu-devel/cover/20220818151244.2050-1-qtxuning1999@sjtu.edu.cn/)
   * Summary: this series realized IN\_ORDER prototype for virtio-net device in QEMU.
+
+## Run project
+
+Both QEMU and Linux source code are inside this repo as a submodule. The host kernel code is the same with guest for simplicity.
