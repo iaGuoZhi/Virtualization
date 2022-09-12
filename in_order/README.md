@@ -10,6 +10,19 @@ I sent three patches series to Linux and QEMU community in total, and they are u
 
 ## IN ORDER feature demystified
 
+Previously virtio frontend use used ring to get used buffers' position(index in the descriptor ring) and length.
+However for some device that will use descriptors in the same order as they are available, the indirection of used ring
+is not necessary, because the next used descriptor always appear after current used descriptors in descriptor ring, and
+as to len of the buffer, we can avoid get the len when the io event is tx. So we can bypass used ring when get used buffers
+in tx and the device support in order feature.
+
+Based on in order feature, the device can batch used buffers as much as possible, because they only need to write one used
+descriptors for a bunch of buffers, which can reduce DMA transactions and avoid polluting cache.
+
+IN ORDER feature should not be a transparent feature, only specific devices(eg, vhost net without zerocopy, vsock) will support this feature.
+
+Here is the description of in order feature in [virito spec](https://docs.oasis-open.org/virtio/virtio/v1.1/csprd01/virtio-v1.1-csprd01.html#project-descriptionx1-470009).
+
 ## Project roadmap
 
 - [x] Enhance virito\_test and vhost\_test to support random batch size and random chain length. [link](https://lkml.org/lkml/2022/7/8/1263)
