@@ -39,4 +39,4 @@ I sent three patches series to Linux and QEMU community in total, and they are u
 
 ## Run project
 
-Both QEMU and Linux source code are inside this repo as a submodule. The host kernel code is the same with guest for simplicity.
+Both QEMU and Linux(host and guest) source code are inside this repo as a submodule. The host kernel code is the same with guest for simplicity.
