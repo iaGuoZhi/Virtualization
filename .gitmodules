@@ -13,3 +13,6 @@
 [submodule "in_order/guest"]
 	path = in_order/guest
 	url = https://github.com/iaGuoZhi/linux
+[submodule "in_order/host"]
+	path = in_order/host
+	url = https://github.com/iaGuoZhi/linux
