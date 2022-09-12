@@ -1,1 +1,1 @@
-Here are some naive projects when learning virtuliazation.
+Here are some naive projects when learning virtualization.
