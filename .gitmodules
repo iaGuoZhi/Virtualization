@@ -16,3 +16,6 @@
 [submodule "in_order/host"]
 	path = in_order/host
 	url = https://github.com/iaGuoZhi/linux
+[submodule "kernel-user-shm/kernel"]
+	path = kernel-user-shm/kernel
+	url = https://github.com/iaGuoZhi/linux
